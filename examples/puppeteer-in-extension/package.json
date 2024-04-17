@@ -1,0 +1,17 @@
+{
+  "name": "puppeteer-in-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c && cp manifest.json extension/ && cp background.js extension/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "puppeteer-core": "^22.6.5",
+    "rollup": "^4.14.3"
+  }
+}
