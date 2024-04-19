@@ -34,6 +34,5 @@ export interface FrameManagerEvents extends Record<EventType, unknown> {
   [FrameManagerEvent.FrameNavigated]: CdpFrame;
   [FrameManagerEvent.FrameDetached]: CdpFrame;
   [FrameManagerEvent.FrameSwapped]: CdpFrame;
-  [FrameManagerEvent.LifecycleEvent]: CdpFrame;
   [FrameManagerEvent.FrameNavigatedWithinDocument]: CdpFrame;
 }

@@ -298,7 +298,6 @@ export class FrameManager extends EventEmitter<FrameManagerEvents> {
       return;
     }
     frame._onLifecycleEvent(event.loaderId, event.name);
-    this.emit(FrameManagerEvent.LifecycleEvent, frame);
     frame.emit(FrameEvent.LifecycleEvent, undefined);
   }
 
@@ -316,7 +315,6 @@ export class FrameManager extends EventEmitter<FrameManagerEvents> {
       return;
     }
     frame._onLoadingStopped();
-    this.emit(FrameManagerEvent.LifecycleEvent, frame);
     frame.emit(FrameEvent.LifecycleEvent, undefined);
   }
 
